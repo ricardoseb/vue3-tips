@@ -38,6 +38,7 @@ import {Head} from '@vueuse/head'
 defineProps({
   title: {
     type: String,
+    default: "Vue tips"
   },
   description: {
     type: String,
@@ -50,7 +51,7 @@ defineProps({
   },
   theme: {
     type: String,
-    default: 'light'
+    default: 'cyberpunk'
   },
   lang: {
     type: String,
