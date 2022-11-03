@@ -1,9 +1,9 @@
 <script setup>
-const titulo = ref("titulo")
+
 </script>
 
 <template>
-  <BaseHead :title="titulo"/>
+  <BaseHead />
 
   <router-view/>
 
@@ -11,8 +11,8 @@ const titulo = ref("titulo")
 <!--Estilos globales-->
 <style scoped>
 :global(body) {
-  margin: 1px;
-  padding: 1px;
+  margin: 15px;
+  padding: 5px;
   font-family: "Bangla Sangam MN";
 }
 </style>

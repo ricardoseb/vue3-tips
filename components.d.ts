@@ -9,11 +9,15 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     App: typeof import('./src/App.vue')['default']
     BaseHead: typeof import('./src/components/BaseHead.vue')['default']
+    Child: typeof import('./src/components/slots/Child.vue')['default']
     DeepLinking: typeof import('./src/components/DeepLinking.vue')['default']
     Pages: typeof import('./src/pages/index.vue')['default']
+    Parent: typeof import('./src/components/slots/Parent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SlotButton: typeof import('./src/components/SlotButton.vue')['default']
+    ScopedSlotList: typeof import('./src/components/slots/ScopedSlotList.vue')['default']
+    SlotButton: typeof import('./src/components/slots/SlotButton.vue')['default']
+    SlotWithTransition: typeof import('./src/components/slots/SlotWithTransition.vue')['default']
     TheNabvar: typeof import('./src/components/TheNabvar.vue')['default']
     User: typeof import('./src/components/User.vue')['default']
   }

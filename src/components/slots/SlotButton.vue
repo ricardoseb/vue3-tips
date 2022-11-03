@@ -1,7 +1,7 @@
 <template>
 
   <button class="btn btn-active">
-    <slot></slot> <!-- slot outlet -->
+    <slot/> <!-- slot outlet -->
   </button>
 
 </template>

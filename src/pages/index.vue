@@ -4,8 +4,6 @@
 import {reactive, ref} from "vue";
 
 
-
-
 const user = reactive({
       user: {
         name: 'Anakin',
@@ -14,17 +12,13 @@ const user = reactive({
       }
     }
 )
-
 const colours = ref(['red', 'blue', 'black'])
-
 </script>
 
 <template>
   <User v-bind="user" :colours="colours"/>
   <div class="divider"></div>
-  <DeepLinking />
+  <DeepLinking/>
   <div class="divider"></div>
-  <SlotButton>
-    <h1>click me!</h1>
-  </SlotButton>
+  <RouterLink to="/slots" class="btn btn-link m-5 text-xl"> To Slots</RouterLink>
 </template>
