@@ -1,31 +1,31 @@
 <template>
-  <div class="p-5">
-    <div class="flex-column text-xl">
+  <div class="p-3">
+    <div class="flex flex-column text-xl space-x-2 text-secondary">
       <p>{{ props.user.name }}</p>
       <p>{{ props.user.profile }}</p>
       <p>{{ props.user.twitter }}</p>
     </div>
-    <div class="flex-column text-xl pt-5">
+    <div class="flex flex-column text-xl pt-3 space-x-3 text-accent">
       <h1 v-for="{ name, id } in users"
           :key="id">{{ name }}
       </h1>
       <h2 v-for="(movie, index) in [
-'Lion King',
-'Frozen',
-'The Princess Bride'
-]">
+        'Lion King',
+         'Frozen',
+          'The Princess Bride'
+        ]">
         {{ index + 1 }} - {{ movie }}
       </h2>
       <h3 v-for="(value, key) in {
-name: 'Lion King',
-released: 2019,
-director: 'Jon Favreau',
-}">
+         name: 'Lion King',
+         released: 2019,
+         director: 'Jon Favreau',
+        }">
         {{ key }}: {{ value }}
       </h3>
     </div>
-    <div class="flex-column justify-center pt-5">
-      <p v-for="(color, index) in props.colours">{{ color }}</p>
+    <div class="flex flex-column space-x-3 pt-3">
+      <h2 v-for="(color, index) in props.colours">{{ color }}</h2>
     </div>
   </div>
 </template>

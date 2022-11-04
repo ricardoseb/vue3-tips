@@ -1,9 +1,10 @@
 <template>
- <Child>
-   <template #default>
-<!--     This will be applied to the default slot.-->
-   </template>
- </Child>
+  <Child>
+<!--   esto es equivalante a v-slot:default-->
+    <template #default>
+      <!--     This will be applied to the default slot.-->
+    </template>
+  </Child>
   <div class="divider"></div>
   <ScopedSlotList :items="items">
     <template v-slot="{ item }">

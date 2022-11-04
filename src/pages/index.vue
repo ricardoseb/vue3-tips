@@ -20,5 +20,8 @@ const colours = ref(['red', 'blue', 'black'])
   <div class="divider"></div>
   <DeepLinking/>
   <div class="divider"></div>
+  <RefAndReactive></RefAndReactive>
+  <div class="divider"></div>
   <RouterLink to="/slots" class="btn btn-link m-5 text-xl"> To Slots</RouterLink>
+  <RouterLink to="/utils" class="btn btn-link m-5 text-xl"> To Utils</RouterLink>
 </template>
