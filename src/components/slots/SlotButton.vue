@@ -1,6 +1,6 @@
 <template>
 
-  <button class="btn btn-active">
+  <button class="btn btn-active transition-all duration-700 hover:bg-white">
     <slot/> <!-- slot outlet -->
   </button>
 
