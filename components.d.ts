@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     BaseHead: typeof import('./src/components/BaseHead.vue')['default']
     Child: typeof import('./src/components/slots/Child.vue')['default']
     DeepLinking: typeof import('./src/components/DeepLinking.vue')['default']
+    DynamicClasses: typeof import('./src/components/DynamicClasses.vue')['default']
     ImageUtil: typeof import('./src/components/utils/ImageUtil.vue')['default']
     Pages: typeof import('./src/pages/index.vue')['default']
     Parent: typeof import('./src/components/slots/Parent.vue')['default']
