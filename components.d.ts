@@ -7,12 +7,14 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AddressForm: typeof import('./src/components/utils/AddressForm.vue')['default']
     App: typeof import('./src/App.vue')['default']
     BaseHead: typeof import('./src/components/BaseHead.vue')['default']
     Child: typeof import('./src/components/slots/Child.vue')['default']
     DeepLinking: typeof import('./src/components/DeepLinking.vue')['default']
     DynamicClasses: typeof import('./src/components/DynamicClasses.vue')['default']
     ImageUtil: typeof import('./src/components/utils/ImageUtil.vue')['default']
+    LinkComponent: typeof import('./src/components/utils/LinkComponent.vue')['default']
     Pages: typeof import('./src/pages/index.vue')['default']
     Parent: typeof import('./src/components/slots/Parent.vue')['default']
     RefAndReactive: typeof import('./src/components/RefAndReactive.vue')['default']

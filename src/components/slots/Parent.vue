@@ -1,6 +1,6 @@
 <template>
   <Child>
-<!--   esto es equivalante a v-slot:default-->
+    <!--   esto es equivalante a v-slot:default-->
     <template #default>
       <!--     This will be applied to the default slot.-->
     </template>
@@ -20,6 +20,7 @@
       This is false.
     </div>
   </SlotWithTransition>
+
 </template>
 
 <script setup>
@@ -27,6 +28,7 @@ import {ref} from "vue";
 
 const items = ref(["TV", "Radio", "Horno"])
 const isThisTrue = ref(true)
+
 </script>
 
 <style scoped>
